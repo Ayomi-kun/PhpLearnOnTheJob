@@ -20,4 +20,4 @@
  #### **_help and resources(tutorials) :_ CODE PROJECT**
 
  #### in the words of Niyi:
- > "Learning with a project is my best way of learning a programming language"
+ > "Learning with a project is the best way of learning a programming language"
