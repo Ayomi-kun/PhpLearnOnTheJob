@@ -12,6 +12,9 @@
     <?php
         echo "<p> Hello World </p>";
     ?>
-    
+    <a href="login.php">Click here to login, for already registered user </a>
+    <br />
+    <a href="register.php">Click here to register, for new user </a>
+
 </body>
 </html>
