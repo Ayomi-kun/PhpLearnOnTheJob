@@ -3,7 +3,7 @@
 
   - [x]  1. Setting up your server
   - [x] 2. Creating the public Html Pages
-  - [ ] 3. Creating the database and its tables
+  - [x] 3. Creating the database and its tables
   - [ ] 4. Adding users to the database
   - [ ] 5. User log-in: Authentication
   - [ ] 6. Setting up the home page for Logged-in Users and Logging-out
