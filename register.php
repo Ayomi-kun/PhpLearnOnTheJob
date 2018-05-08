@@ -11,7 +11,7 @@
 <body>
     <h2> Registration Page </h2>
     <a href="index.php"> Click here to go back </a> <br /> <br />
-    <form action="register.php" method="POST">
+    <form action="checklogin.php" method="POST">
         <label> Enter Username: </label>
         <input type="text" name="username" required="required" />
         <br />
