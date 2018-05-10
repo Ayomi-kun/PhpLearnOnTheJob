@@ -1,6 +1,7 @@
 <?php 
+// exit(var_dump($_POST));
     if(isset($_POST['submit'])){
-        $servername = "localhost";
+    $servername = "localhost";
     $username = "root";
     $password = "";
     $dbname = "first_db";
@@ -19,14 +20,19 @@
     $sql = "INSERT INTO users (username, password) Values ('$username1','$password1')";
 
     if($conn->query($sql) === TRUE) {
-        echo "New Record Created Succesfully";
-        print '<script>alert("Succesfully Registered");</script>';//prompts the user
-        print '<script>window.location.assign("register.php");</script>'; //redirects to register.php
+        //echo "New Record Created Succesfully";
+        //print '<script>alert("Succesfully Registered");</script>';//prompts the user
+        //print '<script>window.location.assign("register.php");</script>'; //redirects to register.php
+        $res = json_encode(array("status"=>1,"message"=>"Succesfully Registered"));
     }
     else{
-        echo "Error: " . $sql . "<br>" . $conn->error;
+       // echo "Error:  $sql  <br>  $conn->error";
+       // print `<script>alert("Registration Not successful");</script>`; //prompt the user
+      // header('location: register.php');
+      $res = json_encode(array("status"=>0,"message"=>" Registration not Successful"));
     }
 
+    exit($res);
     $conn->Close();
     }
     

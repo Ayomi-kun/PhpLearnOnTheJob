@@ -6,7 +6,7 @@
     <title>Not my first php website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
     <h2> Login Page </h2>
