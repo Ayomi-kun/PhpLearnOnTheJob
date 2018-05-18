@@ -14,10 +14,12 @@ if(isset($_POST['submit'])){
     $username = htmlspecialchars($_POST['username']);
     $password = md5($_POST['password']);
     
-    $sql = "Select * from users WHERE username='$username'"; // query the user table
+    $sql = "Select * from users WHERE username='".$username."' AND password='".$password."'"; // query the user table
+    $result = $conn->query($sql);
     
-    if($conn->query($sql) == TRUE){
-        Print "you are activated";
+    if($result->num_rows > 0 ){
+        header("location: welcome.php");
+        
     }
     else{
         print'<script> alert("Incorrect Username or Password!");</script>';

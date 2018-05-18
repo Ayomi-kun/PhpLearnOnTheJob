@@ -5,7 +5,7 @@
   - [x] 2. Creating the public Html Pages
   - [x] 3. Creating the database and its tables
   - [x] 4. Adding users to the database
-  - [ ] 5. User log-in: Authentication
+  - [x] 5. User log-in: Authentication
   - [ ] 6. Setting up the home page for Logged-in Users and Logging-out
   - [ ] 7. Testing page security
   - [ ] 8. Adding data to the list - User Access only
