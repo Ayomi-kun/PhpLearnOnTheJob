@@ -18,7 +18,7 @@
         <label> Enter Password: </label>
         <input type="text" name="password" required="required" />
         <br />
-        <input type="submit" value="Login" />
+        <input type="submit" name="submit" value="Login" />
     </form>
 
 </body>
