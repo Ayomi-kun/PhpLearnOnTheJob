@@ -18,6 +18,7 @@ if(isset($_POST['submit'])){
     $result = $conn->query($sql);
     
     if($result->num_rows > 0 ){
+        $_SESSION['user'] = $username;
         header("location: home.php");
         
     }
