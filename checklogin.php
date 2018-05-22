@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
     $result = $conn->query($sql);
     
     if($result->num_rows > 0 ){
-        header("location: welcome.php");
+        header("location: home.php");
         
     }
     else{
