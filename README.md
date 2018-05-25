@@ -7,7 +7,7 @@
   - [x] 4. Adding users to the database
   - [x] 5. User log-in: Authentication
   - [x] 6. Setting up the home page for Logged-in Users and Logging-out
-  - [ ] 7. Testing page security
+  - [x] 7. Testing page security
   - [ ] 8. Adding data to the list - User Access only
   - [ ] 9. Displaying data in the home page
   - [ ] 10. Editing Data
