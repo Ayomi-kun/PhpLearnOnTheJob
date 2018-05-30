@@ -27,7 +27,7 @@ else{
     <form action="add.php" method="POST">
     <label>Add more to the list:</label> <input type="text" name="details" /><br />
     <label>Public post? </label> <input type="checkbox" name="public[]" value="yes" />  <br />
-    <input type="submit" value="Add to list" />
+    <input type="submit" name="submit" value="Add to list" />
     </form>
     <h2 align="center">My List</h2>
 
