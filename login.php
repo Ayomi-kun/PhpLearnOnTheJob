@@ -16,7 +16,7 @@
         <input type="text" name="username" required="required" />
         <br />
         <label> Enter Password: </label>
-        <input type="text" name="password" required="required" />
+        <input type="password" name="password" required="required" />
         <br />
         <input type="submit" name="submit" value="Login" />
     </form>

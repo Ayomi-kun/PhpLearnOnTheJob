@@ -3,14 +3,8 @@ if(isset($_POST['submit'])){
     session_start();
     
     //connect to database
-    $conn = new mysqli("localhost", "root", "", "first_db"); // sql connection using mysqli extention
-   
-    $bool = true;
-
-    if ($conn -> connect_error){
-        die("connection failed:".$conn->connect_error);
-
-    }
+    include_once "db_config.php";
+    
     $username = htmlspecialchars($_POST['username']);
     $password = md5($_POST['password']);
     

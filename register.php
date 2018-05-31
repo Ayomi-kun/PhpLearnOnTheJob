@@ -18,7 +18,7 @@
         <input type="text" name="username" required="required" />
         <br />
         <label> Enter Password: </label>
-        <input type="text" name="password" required="required" />
+        <input type="password" name="password" required="required" />
         <br />
         <input type="submit" name="submit" value="Register" />
     </form>
@@ -37,6 +37,7 @@
             contentType:false,
             success: function(data){
                 alert(data)
+                window.location = "login.php";
             },
             error:function(xhr){
                 alert('error')

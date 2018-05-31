@@ -1,18 +1,7 @@
 <?php 
 // exit(var_dump($_POST));
     if(isset($_POST['submit'])){
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "first_db";
-
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    
-    // Check connection
-    if ($conn->connect_error) {
-        die("connection failed:" . $conn->connect_error);
-    }
+    include_once "db_config.php";
 
     $username1 = htmlspecialchars($_POST['username']);
     $password1 = md5($_POST['password']);
