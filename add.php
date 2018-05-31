@@ -29,21 +29,28 @@ if(isset($_POST['submit'])){
         }
         $decision = "no";
         //foreach($_POST["public"] in $each_check){
-            $each_check = $_POST["public"];
-            if ($each_check != null){
+             if(isset($_POST["public"])){
                 $decision = "yes";
             }
             
         
      
-        $sql = "INSERT INTO  list (details, date_posted, time_posted, public) Values ('$details','$date','$time',$decision)";
+        $sql = "INSERT INTO  list (details, date_posted, time_posted, public) Values ('$details','$date','$time','$decision')";
         $conn->query($sql);
-        //exit(var_dump($conn));
+
+       if(count($conn->error_list) >0){
+        print'<script>alert("Sorry, an error occured");</script>';
+       }else{
         print'<script>alert("Succesfully Saved");</script>';
+       }
+      print "
+       <script>window.location = 'home.php'</script>
+      ";
+        // exit(var_dump($conn));
     
     }
 
    
 }
-header('location: home.php')
+
 ?>

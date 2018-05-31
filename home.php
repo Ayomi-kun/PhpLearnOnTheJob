@@ -26,7 +26,7 @@ else{
     <a href="logout.php"> Click here to logout</a><br /><br />
     <form action="add.php" method="POST">
     <label>Add more to the list:</label> <input type="text" name="details" /><br />
-    <label>Public post? </label> <input type="checkbox" name="public[]" value="yes" />  <br />
+    <label>Public post? </label> <input type="checkbox" name="public" value="yes" />  <br />
     <input type="submit" name="submit" value="Add to list" />
     </form>
     <h2 align="center">My List</h2>
