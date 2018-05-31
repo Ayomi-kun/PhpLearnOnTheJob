@@ -15,18 +15,7 @@ if(isset($_POST['submit'])){
         $date = strftime("%B %d, %Y"); //date
         
         
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "first_db";
-    
-        // Create connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        
-        // Check connection
-        if ($conn->connect_error) {
-            die("connection failed:" . $conn->connect_error);
-        }
+      include_once "db_config.php";
         $decision = "no";
         //foreach($_POST["public"] in $each_check){
              if(isset($_POST["public"])){
