@@ -1,6 +1,6 @@
 # PhpLearnOnTheJob
 
-
+### STAGE 1
   - [x]  1. Setting up your server
   - [x] 2. Creating the public Html Pages
   - [x] 3. Creating the database and its tables
@@ -14,6 +14,8 @@
   - [ ] 11. Deleting Data
   - [ ] 12. Displaying public data
   - [ ] 13. De-briefing and summary
+
+### STAGE 2
 
 ###### FOR EASE AND READABILITY, I WILL BE NAMMING EACH COMMIT WITH IT'S RESPECTIVE TASK AS LISTED ABOVE WHEN COMPLETED
 
