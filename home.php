@@ -16,7 +16,7 @@ else{
 // $_SESSION['users']; // assigned username from checklogin
 
 
-?>
+?> 
 <body>
     <h2>HOME PAGE </h2>
     <h3>Welcome <?php print $user; ?> </h3>
@@ -30,6 +30,32 @@ else{
     <input type="submit" name="submit" value="Add to list" />
     </form>
     <h2 align="center">My List</h2>
+    <Table align="center" style="border:1px solid black;" rules="all" cellspacing="50">
+    <thead> 
+        <tr>
+        <th> ID </th>
+        <th> Details </th>
+        <th> Date Posted </th>
+        <th> Date Edited </th>
+        <th> Edit </th>
+        <th> Delete </th>
+        <th> Public Post </th>
+
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td> ID </td>
+        <td> Details </td>
+        <td> Date Posted kdiopjg[sigsodnfusdfi</td>
+        <td> Date Edited </td>
+        <td> Edit </td>
+        <td> Deleteoushgdisidgojsgoih </td>
+        <td> Public Post </td>
+    </tr>
+</tbody>
+    </Table>
+
 
 </body>
 </html>
