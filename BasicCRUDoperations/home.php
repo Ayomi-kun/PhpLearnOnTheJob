@@ -5,6 +5,7 @@
     <!-- icon in the header -->
 </head>
 <?php
+include_once "db_config.php";
 session_start(); //starts the session.
 if($_SESSION['user']){ // checks if the user is logged in
     $user = $_SESSION['user'];
@@ -36,23 +37,33 @@ else{
         <th> ID </th>
         <th> Details </th>
         <th> Date Posted </th>
+        <th> Time Edited </th>
         <th> Date Edited </th>
-        <th> Edit </th>
-        <th> Delete </th>
+        <th> Time Edited</th>
         <th> Public Post </th>
 
         </tr>
     </thead>
     <tbody>
-    <tr>
-        <td> ID </td>
-        <td> Details </td>
-        <td> Date Posted kdiopjg[sigsodnfusdfi</td>
-        <td> Date Edited </td>
-        <td> Edit </td>
-        <td> Deleteoushgdisidgojsgoih </td>
-        <td> Public Post </td>
-    </tr>
+    <?php
+        $sql = "Select * from list"; // query the list table
+        $result = $conn->query($sql);
+        
+        if($result->num_rows > 0 ){
+            while($row= $result->fetch_assoc()){?>
+                <tr>
+                    <td> <?php echo $row['id'] ?> </td>
+                    <td> <?php echo $row['details'] ?> </td>
+                    <td> <?php echo $row['date_posted'] ?> </td>
+                    <td> <?php echo $row['time_posted'] ?>  </td>
+                    <td> <?php echo $row['date_edited'] ?>  </td>
+                    <td> <?php echo $row['time_edited'] ?>  </td>
+                    <td> <?php echo $row['public'] ?>  </td>
+                </tr>
+           <?php  }            
+        }
+    ?>
+    
 </tbody>
     </Table>
 
