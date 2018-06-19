@@ -1,0 +1,9 @@
+REST stands for "REpresentational State Transfer". 
+
+API stands for "Application Programming Interface".
+It is a set or rules that allows one piece of software application to talk to another.
+Those "rules" can include create, read, update and delete operations.
+
+Where REST API is used?
+REST API can be used by any application that can connect to the internet.
+If data from an application can be created, read, updated or deleted using another application, it usually means a REST API is used.
