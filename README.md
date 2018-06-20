@@ -9,7 +9,7 @@
   - [x] 6. Setting up the home page for Logged-in Users and Logging-out
   - [x] 7. Testing page security
   - [x] 8. Adding data to the list - User Access only
-  - [ ] 9. Displaying data in the home page
+  - [x] 9. Displaying data in the home page
   - [ ] 10. Editing Data
   - [ ] 11. Deleting Data
   - [ ] 12. Displaying public data

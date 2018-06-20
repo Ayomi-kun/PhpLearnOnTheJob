@@ -50,14 +50,22 @@ else{
         $result = $conn->query($sql);
         
         if($result->num_rows > 0 ){
-            while($row= $result->fetch_assoc()){?>
+            while($row= $result->fetch_assoc()){
+                $date = date('d M, Y',strtotime($row['date_time']));
+
+                $time = date('h:i A',strtotime($row['date_time']));
+
+                $dateedited = date('d M, Y',strtotime($row['date_time_edited']));
+                $timeedited = date('h:i A',strtotime($row['date_time_edited']));
+                
+                ?>
                 <tr>
                     <td> <?php echo $row['id'] ?> </td>
                     <td> <?php echo $row['details'] ?> </td>
-                    <td> <?php echo $row['date_posted'] ?> </td>
-                    <td> <?php echo $row['time_posted'] ?>  </td>
-                    <td> <?php echo $row['date_edited'] ?>  </td>
-                    <td> <?php echo $row['time_edited'] ?>  </td>
+                    <td> <?php echo $date ?> </td>
+                    <td> <?php echo $time ?>  </td>
+                    <td> <?php echo $dateedited ?>  </td>
+                    <td> <?php echo $timeedited ?>  </td>
                     <td> <?php echo $row['public'] ?>  </td>
                 </tr>
            <?php  }            
