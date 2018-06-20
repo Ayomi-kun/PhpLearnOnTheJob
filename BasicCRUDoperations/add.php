@@ -11,8 +11,7 @@ else{
 if(isset($_POST['submit'])){
     if($_SERVER['REQUEST_METHOD'] == "POST"){
         $details = $_POST['details'];
-        $time = strftime("%X"); //time
-        $date = strftime("%B %d, %Y"); //date
+       
         
         
       include_once "db_config.php";
@@ -24,7 +23,7 @@ if(isset($_POST['submit'])){
             
         
      
-        $sql = "INSERT INTO  list (details, date_posted, time_posted, public) Values ('$details','$date','$time','$decision')";
+        $sql = "INSERT INTO  list (details, public) Values ('$details','$decision')";
         $conn->query($sql);
 
        if(count($conn->error_list) >0){
