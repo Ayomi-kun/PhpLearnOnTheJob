@@ -10,7 +10,7 @@
 </head>
 <body>
     <h2> Login Page </h2>
-    <a href="index.php"> Click here to go back </a> <br /> <br />
+    <a href="signin.php"> Click here to go back </a> <br /> <br />
     <form action="checklogin.php" method="POST">
         <label> Enter Username: </label>
         <input type="text" name="username" required="required" />

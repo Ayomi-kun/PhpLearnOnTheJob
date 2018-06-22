@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
     
     if($result->num_rows > 0 ){
         $_SESSION['user'] = $username;
-        header("location: home.php");
+        header("location: index.php");
         
     }
     else{
