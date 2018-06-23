@@ -24,7 +24,7 @@ else{
 
 
 ?> 
-<body>
+<body class="container-fluid">
     <h2 class="text-center">HOME PAGE </h2>
     <h4 id="welcome">Welcome <?php print $user; ?> </h4>
     <br />
