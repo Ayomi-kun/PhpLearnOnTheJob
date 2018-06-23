@@ -2,7 +2,13 @@
 <head>
     <title>Welcome page!</title>
     <link rel="shortcut icon" href="picture/mikagn.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../content/css/bootstrap.min.css"/>
     <!-- icon in the header -->
+    <style>
+        #welcome{
+            text-align: right;
+        }
+    </style>
 </head>
 <?php
 include_once "db_config.php";
@@ -19,8 +25,8 @@ else{
 
 ?> 
 <body>
-    <h2>HOME PAGE </h2>
-    <h3>Welcome <?php print $user; ?> </h3>
+    <h2 class="text-center">HOME PAGE </h2>
+    <h4 id="welcome">Welcome <?php print $user; ?> </h4>
     <br />
     <br />
 
@@ -31,8 +37,8 @@ else{
     <input type="submit" name="submit" value="Add to list" />
     </form>
     <h2 align="center">My List</h2>
-    <Table align="center" style="border:1px solid black;" rules="all" cellspacing="50">
-    <thead> 
+    <Table class="table" align="center" style="border:1px solid black;" rules="all" cellspacing="50">
+    <thead class="thead-dark"> 
         <tr>
         <th> ID </th>
         <th> Details </th>
@@ -60,7 +66,7 @@ else{
                 
                 ?>
                 <tr>
-                    <td> <?php echo $row['id'] ?> </td>
+                    <th> <?php echo $row['id'] ?> </th>
                     <td> <?php echo $row['details'] ?> </td>
                     <td> <?php echo $date ?> </td>
                     <td> <?php echo $time ?>  </td>
@@ -76,5 +82,6 @@ else{
     </Table>
 
 
+<script src="../content/js/bootstrap.min.js"></script>
 </body>
 </html>
