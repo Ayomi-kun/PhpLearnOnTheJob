@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
         print'<script>alert("Succesfully Saved");</script>';
        }
       print "
-       <script>window.location = 'home.php'</script>
+       <script>window.location = 'index.php'</script>
       ";
         // exit(var_dump($conn));
     
