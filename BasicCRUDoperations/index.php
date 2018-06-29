@@ -30,7 +30,7 @@ else{
     <br />
     <br />
 
-    <a href="logout.php"> Click here to logout</a><br /><br />
+    <div class="text-right"><a href="logout.php"> Click here to logout</a></div><br /><br />
     <form action="add.php" method="POST">
     <label>Add more to the list:</label> <input type="text" name="details" /><br />
     <label>Public post? </label> <input type="checkbox" name="public" value="yes" />  <br />
@@ -74,7 +74,7 @@ else{
                     <td> <?php echo $dateedited ?>  </td>
                     <td> <?php echo $timeedited ?>  </td>
                     <td> <?php echo $row['public'] ?>  </td>
-                    <td> <button type="button" class="btn btn-primary"data-toggle="modal" data-target="#exampleModal"> Edit / Delete </button> </td>
+                    <td class="text-center"> <button type="button" class="btn btn-primary"data-toggle="modal" data-target="#exampleModal"> Edit / Delete </button> </td>
                 </tr>
            <?php  }            
         }
