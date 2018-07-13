@@ -18,7 +18,8 @@ if(isset($_POST['submit'])){
     }
     else{
         print'<script> alert("Incorrect Username or Password!");</script>';
-        header("location: login.php");
+        print'<script> window.location="login.php"; </script>';
+        // header("location: login.php");
     }
 }
     

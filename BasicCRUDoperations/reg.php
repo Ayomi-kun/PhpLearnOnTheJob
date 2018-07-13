@@ -12,13 +12,16 @@
         //echo "New Record Created Succesfully";
         //print '<script>alert("Succesfully Registered");</script>';//prompts the user
         //print '<script>window.location.assign("register.php");</script>'; //redirects to register.php
-        $res = json_encode(array("status"=>1,"message"=>"Succesfully Registered"));
+       // $res = json_encode(array("status"=>1,"message"=>"Succesfully Registered"));
+       print'<script> alert("Succesfully Registered");</script>';
+        header("location:login.php");
     }
     else{
        // echo "Error:  $sql  <br>  $conn->error";
        // print `<script>alert("Registration Not successful");</script>`; //prompt the user
       // header('location: register.php');
-      $res = json_encode(array("status"=>0,"message"=>" Registration not Successful"));
+      //$res = json_encode(array("status"=>0,"message"=>" Registration not Successful"));
+      print'<script> alert("Unsuccessful Registeration");</script>';
     }
 
     exit($res);
